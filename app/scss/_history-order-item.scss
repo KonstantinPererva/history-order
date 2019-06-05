@@ -1,0 +1,24 @@
+.history-order-item {
+  display: flex;
+  border-bottom: 1px solid #cecece;
+  min-height: 65px;
+
+  &:first-child {
+    border-top: 1px solid #cecece;
+  }
+
+  &__block {
+    &_left {
+      flex: 1;
+      border-right: 1px solid #cecece;
+    }
+
+    &_right {
+      width: 198px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

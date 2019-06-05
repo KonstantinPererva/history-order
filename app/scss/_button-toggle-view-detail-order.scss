@@ -1,0 +1,22 @@
+.button-toggle-view-detail-order {
+  padding: 10px 5px 10px 0;
+
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+
+      & svg path {
+        display: block;
+        stroke: #323232;
+      }
+    }
+  }
+
+  & svg {
+    display: block;
+
+    & path {
+      transition: .15s;
+    }
+  }
+}
