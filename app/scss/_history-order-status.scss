@@ -1,10 +1,17 @@
 .history-order-status {
-
   &__text {
     font-size: 11px;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+    }
     
     &_gray {
       color: #b1b1b1;
+
+      @media (max-width: 991px) {
+        color: #323232;
+      }
     }
   }
 }

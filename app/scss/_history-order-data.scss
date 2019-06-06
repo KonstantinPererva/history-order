@@ -3,31 +3,56 @@
   min-height: 65px;
   padding: 0 35px 0 0;
 
+  @media (max-width: 991px) {
+    display: block;
+    padding: 0 15px;
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
+
+    @media (max-width: 991px) {
+      padding: 6px 0;
+    }
   }
 
   &__button {
     display: flex;
     align-items: center;
     margin: 0 15px 0 0;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 
   &__number {
     display: flex;
     align-items: center;
-    width: 94px;
+    min-width: 94px;
     padding: 0 7px;
     font-size: 11px;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+      padding: 0 7px 0 0;
+      flex: 1;
+    }
   }
 
   &__date {
     display: flex;
     align-items: center;
-    width: 171px;
+    min-width: 171px;
     padding: 0 7px;
     font-size: 11px;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+      min-width: auto;
+      padding: 0 0 0 7px;
+    }
   }
 
   &__photos {
@@ -39,14 +64,27 @@
   &__status {
     align-items: center;
     display: none;
+    font-size: 11px;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+      display: block;
+      color: #989898;
+    }
   }
 
   &__total {
-    width: 192px;
+    min-width: 192px;
     padding: 0 7px;
     font-size: 11px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+      flex: 1;
+      padding: 0 0 0 7px;
+    }
   }
 }

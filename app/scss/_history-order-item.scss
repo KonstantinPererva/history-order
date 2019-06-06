@@ -3,14 +3,28 @@
   border-bottom: 1px solid #cecece;
   min-height: 65px;
 
+  @media (max-width: 991px) {
+    display: block;
+  }
+
   &:first-child {
     border-top: 1px solid #cecece;
+  }
+
+  &.active {
+    @media (max-width: 991px) {
+      background: #f5f5f5;
+    }
   }
 
   &__block {
     &_left {
       flex: 1;
       border-right: 1px solid #cecece;
+
+      @media (max-width: 991px) {
+        border-right: 0;
+      }
     }
 
     &_right {
@@ -19,6 +33,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 991px) {
+        width: 100%;
+        padding: 12px 0;
+        border-top: 1px solid #e5e5e5;
+      }
     }
   }
 }
