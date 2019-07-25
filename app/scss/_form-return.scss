@@ -1,0 +1,9 @@
+.form-return {
+  width: 800px;
+  height: 100%;
+  overflow-y: auto;
+
+  &__inner {
+    background: #fff;
+  }
+}
