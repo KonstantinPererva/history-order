@@ -1,4 +1,6 @@
 .history-order-status {
+  text-align: center;
+
   &__text {
     font-size: 11px;
 
@@ -8,10 +10,30 @@
     
     &_gray {
       color: #b1b1b1;
+    }
 
-      @media (max-width: 991px) {
-        color: #323232;
+    &_strong {
+      font-weight: bold;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #a3a3a3;
+    text-decoration: none;
+
+    @media (hover: hover) {
+      &:hover {
+        border-bottom: 1px solid transparent;
+        cursor: pointer;
       }
     }
+  }
+
+  & span {
+    display: inline-block;
   }
 }
