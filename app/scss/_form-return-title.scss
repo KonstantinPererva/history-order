@@ -1,0 +1,18 @@
+.form-return-title {
+  text-align: center;
+  margin: 0 0 10px;
+
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: MullerBold, sans-serif;
+    color: #000;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.success-return-title {
+  margin: 0 0 50px;
+
+  &__text {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: MullerBold, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

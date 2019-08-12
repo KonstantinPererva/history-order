@@ -1,0 +1,28 @@
+.button-return-order {
+  width: 100%;
+  height: 34px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  margin: 10px 0 0;
+  transition: .15s;
+  font-family: MullerMedium, sans-serif;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+  }
+}

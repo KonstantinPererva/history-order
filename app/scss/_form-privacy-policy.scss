@@ -1,0 +1,25 @@
+.form-privacy-policy {
+  max-width: 530px;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+
+  &__text {
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+    font-family: MullerRegular, sans-serif;
+  }
+  
+  &__link {
+    color: #000;
+    text-decoration: underline;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}

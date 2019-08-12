@@ -1,0 +1,9 @@
+.form-return-col {
+  width: 393px;
+  flex-shrink: 0;
+
+  @media (max-width: 767px) {
+    max-width: 393px;
+    width: 100%;
+  }
+}

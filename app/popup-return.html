@@ -12,37 +12,48 @@
     <title>Return</title>
 </head>
 <body>
+<div class="return-order-button">
+    <span class="return-order-button__text">Оформить возврат</span>
+</div>
+
+
     <div class="popup-return">
         <div class="popup-return__inner">
             <div class="popup-return__form">
                 <form action="!" method="post" class="form-return">
+                    <button type="button" class="form-return-close">
+                        <img src="/local/templates/spazio_template/img/close-bunus.svg" alt="close" />
+                    </button>
+
                     <div class="form-return__inner">
                         <div class="form-return__header">
-                            <div class="popup-return-title">
-                                <span class="popup-return-title__text">Форма для возврата товара</span>
+                            <div class="form-return-title">
+                                <span class="form-return-title__text">Форма для возврата товара</span>
                             </div>
                         </div>
 
                         <div class="form-return__body">
-                            <p class="form-return-text">Мы рекомендуем Вам сделать возврат не позже 10 дней после получения заказа,чтобы точно уложиться в положенные сроки и вовремя получить возврат средств.</p>
+                            <div class="form-return-descr">
+                                <p class="form-return-text">Мы рекомендуем Вам сделать возврат не позже 10 дней после получения заказа,чтобы точно уложиться в положенные сроки и вовремя получить возврат средств.</p>
 
-                            <p class="form-return-text">Детальную информацию о возврате Вы можете найти <a href="#" class="form-return-text__link">здесь</a>.</p>
+                                <p class="form-return-text">Детальную информацию о возврате Вы можете найти <a href="/help/?tab=change" class="form-return-text__link">здесь</a>.</p>
+                            </div>
 
                             <div class="form-return-col">
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Номер чека" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Фамилия" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Имя" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Отчество" />
                                 </div>
                             </div>
 
@@ -101,28 +112,29 @@
 
                                 <div class="form-return-col">
                                     <div class="form-return-block">
-                                        <div class="form-return-wrapper-select">
-                                            <select name="" id="" class="form-return-select">
-                                                <option value="">Причина возврата</option>
-                                                <option value="">Не подошла модель/внешний вид</option>
-                                                <option value="">Не подошел размер (меньше)</option>
-                                                <option value="">Не подошел размер (больше)</option>
-                                                <option value="">Товар не соответствует фото/цвету/описанию</option>
-                                                <option value="">Брак/загрязнение</option>
-                                                <option value="">Другая причина</option>
-                                            </select>
+                                        <div class="form-return-block__item">
+                                            <div class="form-return-wrapper-select">
+                                                <select name="" id="" class="form-return-select">
+                                                    <option value="">Причина возврата</option>
+                                                    <option value="">Не подошла модель/внешний вид</option>
+                                                    <option value="">Не подошел размер (меньше)</option>
+                                                    <option value="">Не подошел размер (больше)</option>
+                                                    <option value="">Товар не соответствует фото/цвету/описанию</option>
+                                                    <option value="">Брак/загрязнение</option>
+                                                    <option value="">Другая причина</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="button-confirmation-return">
+                                                <label class="button-confirmation-return__label">
+                                                    <input type="checkbox" class="button-confirmation-return__input" />
+
+                                                    <span class="button-confirmation-return__indicator"></span>
+
+                                                    <span class="button-confirmation-return__title">Вернуть</span>
+                                                </label>
+                                            </div>
                                         </div>
-
-                                        <div class="button-confirmation-return">
-                                            <label class="button-confirmation-return__label">
-                                                <input type="text" class="button-confirmation-return__input" />
-
-                                                <span class="button-confirmation-return__indicator"></span>
-
-                                                <span class="button-confirmation-return__title">Вернуть</span>
-                                            </label>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -182,73 +194,76 @@
 
                                 <div class="form-return-col">
                                     <div class="form-return-block">
-                                        <div class="form-return-wrapper-select">
-                                            <select class="form-return-select">
-                                                <option value="">Причина возврата</option>
-                                                <option value="">Не подошла модель/внешний вид</option>
-                                                <option value="">Не подошел размер (меньше)</option>
-                                                <option value="">Не подошел размер (больше)</option>
-                                                <option value="">Товар не соответствует фото/цвету/описанию</option>
-                                                <option value="">Брак/загрязнение</option>
-                                                <option value="">Другая причина</option>
-                                            </select>
+                                        <div class="form-return-block__item">
+                                            <div class="form-return-wrapper-select">
+                                                <select class="form-return-select">
+                                                    <option value="">Причина возврата</option>
+                                                    <option value="">Не подошла модель/внешний вид</option>
+                                                    <option value="">Не подошел размер (меньше)</option>
+                                                    <option value="">Не подошел размер (больше)</option>
+                                                    <option value="">Товар не соответствует фото/цвету/описанию</option>
+                                                    <option value="">Брак/загрязнение</option>
+                                                    <option value="">Другая причина</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="button-confirmation-return">
+                                                <label class="button-confirmation-return__label">
+                                                    <input type="checkbox" class="button-confirmation-return__input" />
+
+                                                    <span class="button-confirmation-return__indicator"></span>
+
+                                                    <span class="button-confirmation-return__title">Вернуть</span>
+                                                </label>
+                                            </div>
                                         </div>
-
-                                        <div class="button-confirmation-return">
-                                            <label class="button-confirmation-return__label">
-                                                <input type="text" class="button-confirmation-return__input" />
-
-                                                <span class="button-confirmation-return__indicator"></span>
-
-                                                <span class="button-confirmation-return__title">Вернуть</span>
-                                            </label>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-return-total">
-                                <span class="form-return-total__text">Итого</span>
+                                <span class="form-return-total__text">Итого:</span>
 
                                 <span class="form-return-total__text">1399</span>
 
                                 <span class="form-return-total__text">грн</span>
                             </div>
 
-                            <p class="form-return-text">Денежные средства будут возвращены на указанную персональную банковскую карту (в случае, если Вы оплачивали товар наличными) либо на ту карту, с которой была осуществлена оплата через сайт.</p>
+                            <div class="form-return-descr">
+                                <p class="form-return-text">Денежные средства будут возвращены на указанную персональную банковскую карту (в случае, если Вы оплачивали товар наличными) либо на ту карту, с которой была осуществлена оплата через сайт.</p>
+                            </div>
 
                             <div class="form-return-col">
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Фамилия" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Имя" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Отчество" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Номер телефона " />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Номер карты" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Название банка" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="МФО банка" />
                                 </div>
 
                                 <div class="form-return-field">
-                                    <input type="text" class="form-return-input" />
+                                    <input type="text" class="form-return-input" placeholder="Счет получателя" />
                                 </div>
                             </div>
                         </div>
@@ -257,11 +272,39 @@
                             <button type="submit" class="button-return-order" disabled>Отправить</button>
 
                             <div class="form-privacy-policy">
-                                <span class="form-privacy-policy__text">Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных в соответствии с <a href="#" class="form-privacy-policy__link">Политикой конфиденциальности</a>.</span>
+                                <span class="form-privacy-policy__text">Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных в соответствии с <a href="/public_purchase_agreement/" class="form-privacy-policy__link">Политикой конфиденциальности</a>.</span>
                             </div>
                         </div>
                     </div>
                 </form>
+            </div>
+
+            <span class="popup-return__substrate"></span>
+        </div>
+    </div>
+
+    <div class="popup-return" style="display: none">
+        <div class="popup-return__inner">
+            <div class="success-return">
+                <button type="button" class="form-return-close">
+                    <img src="/local/templates/spazio_template/img/close-bunus.svg" alt="close" />
+                </button>
+
+                <div class="success-return-title">
+                    <span class="success-return-title__text">Заявка на возврат товара принята.</span>
+
+                    <span class="success-return-title__text">Мы свяжемся с Вами для согласования деталей.</span>
+                </div>
+                
+                <div class="success-return-wrapper-button">
+                    <a href="" class="success-return-button">
+                        <span class="success-return-button__text">ПЕРЕЙТИ К ПОКУПКАМ</span>
+                    </a>
+
+                    <a href="" class="success-return-button">
+                        <span class="success-return-button__text">ВЕРНУТЬСЯ В ЛИЧНЫЙ КАБИНЕТ</span>
+                    </a>
+                </div>
             </div>
 
             <span class="popup-return__substrate"></span>
