@@ -1,4 +1,61 @@
 .subscriptions {
+  margin: 0 0 20px;
+  font-family: MullerRegular, sans-serif;
+
+  &_news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1017px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      display: block;
+      padding: 0 10px;
+    }
+
+    & .subscriptions-status {
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+
+      &__text {
+        font-size: 11px;
+        line-height: 11px;
+
+        @media (max-width: 767px) {
+          max-width: 300px;
+          width: 100%;
+          height: 40px;
+          font-size: 10px;
+          line-height: 1.42857143;
+          padding: 12px 20px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          background: #fff;
+          color: #000;
+          border: 1px solid #000;
+          font-family: MullerBold, sans-serif;
+        }
+      }
+    }
+
+    & .subscriptions-title {
+      margin: 0;
+
+      @media (max-width: 767px) {
+        margin: 0 0 10px;
+      }
+
+      &__text {
+        @media (max-width: 767px) {
+          font-size: 11px;
+          line-height: 12px;
+          font-family: MullerMedium, sans-serif;
+        }
+      }
+    }
+  }
 
   &__inner {
     max-width: 1017px;
@@ -12,6 +69,10 @@
 
     &:first-child {
       border-top: 1px solid #cecece;
+
+      @media (max-width: 767px) {
+        border-top: 0;
+      }
     }
 
     &__block {
@@ -62,6 +123,7 @@
 
       &_right {
         display: flex;
+        align-items: flex-start;
         flex: 1;
         padding: 0 10px 0 0;
       }
@@ -73,9 +135,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 240px;
+    align-self: stretch;
 
     @media (max-width: 767px) {
       margin: 0;
+      width: auto;
     }
 
     &__block {
@@ -100,8 +165,13 @@
       text-transform: uppercase;
 
       @media (max-width: 767px) {
+        font-size: 9px;
+        line-height: 11px;
+      }
+
+      @media (max-width: 320px) {
         font-size: 8px;
-        line-height: 9px;
+        line-height: 10px;
       }
     }
 
@@ -111,8 +181,13 @@
       line-height: 11px;
 
       @media (max-width: 767px) {
+        font-size: 9px;
+        line-height: 11px;
+      }
+
+      @media (max-width: 320px) {
         font-size: 8px;
-        line-height: 9px;
+        line-height: 10px;
       }
     }
 
@@ -121,11 +196,11 @@
       font-size: 12px;
       line-height: 13px;
       text-transform: uppercase;
-      font-weight: 600;
+      font-family: MullerBold, sans-serif;
       margin: 0 0 10px;
 
       @media (max-width: 767px) {
-        margin: 0 0 6px 0;
+        margin: 0 0 8px 0;
       }
     }
 
@@ -137,16 +212,20 @@
       margin: 0 0 10px;
 
       @media (max-width: 767px) {
-        margin: 0 0 6px 0;
+        margin: 0 0 8px 0;
       }
     }
   }
 
   &-detail-card-price {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 22px 0 0 0;
 
     @media (max-width: 767px) {
       display: block;
+      margin: 0;
     }
 
     &_desktop {
@@ -161,11 +240,15 @@
       font-size: 12px;
       line-height: 14px;
       text-decoration: line-through;
-      font-weight: 600;
+      font-family: MullerMedium, sans-serif;
       margin: 0 70px 0 0;
 
+      @media (max-width: 1440px) {
+        margin: 0 30px 10px 0;
+      }
+
       @media (max-width: 767px) {
-        margin: 0 0 6px 0;
+        margin: 0 0 8px 0;
       }
     }
 
@@ -175,25 +258,25 @@
       font-size: 12px;
       line-height: 14px;
       color: #ff0000;
-      font-weight: 600;
+      font-family: MullerMedium, sans-serif;
+      margin: 0 0 0 0;
 
       @media (max-width: 767px) {
-        margin: 0;
+        margin: 0 0 2px 0;
       }
     }
   }
 
   &-status {
-    text-align: center;
-
     &__text {
       display: inline-block;
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 11px;
+      line-height: 11px;
       text-transform: uppercase;
       border-bottom: 1px solid #a3a3a3;
       text-decoration: none;
-      padding: 0 0 2px;
+      padding: 0 0 1px;
+      font-family: MullerBold, sans-serif;
 
       @media (hover: hover) {
         &:hover {
@@ -204,14 +287,31 @@
 
       @media (max-width: 767px) {
         margin: 0 0 10px 0;
-        font-size: 8px;
-        line-height: 8px;
-        padding: 0 0 1px;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 5px 0 1px;
       }
+    }
+  }
 
-      &_strong {
-        font-weight: 600;
+  &-title {
+    margin: 0 0 20px 0;
+
+    &__text {
+      display: block;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 14px;
+      font-family: MullerMedium, sans-serif;
+
+      @media (max-width: 767px) {
+        text-align: center;
+        font-family: MullerRegular, sans-serif;
       }
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 2px 0;
     }
   }
 }
