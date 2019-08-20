@@ -5,6 +5,14 @@
   left: 0;
   right: 0;
   z-index: 1000000000;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+
+    &:after, &:before {
+      box-sizing: border-box;
+    }
+  }
 
   &__inner {
     position: absolute;
@@ -14,6 +22,7 @@
     right: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     @media (max-width: 767px) {
       display: block;
@@ -33,7 +42,6 @@
 
   &__form {
     position: relative;
-    top: 161px;
     z-index: 1;
     height: calc(100% - 190px);
     display: flex;

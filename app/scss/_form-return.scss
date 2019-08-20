@@ -1,6 +1,6 @@
 .form-return {
   position: relative;
-  width: 1018px;
+  width: 964px;
   height: 100%;
   overflow-y: auto;
 
@@ -18,33 +18,109 @@
 
   &__inner {
     background: #fff;
-    padding: 20px 100px 0;
+    padding: 44px 73px 12px;
 
     @media (max-width: 1024px) {
-      padding: 20px 20px 0;
+      padding: 44px 20px 12px;
     }
 
     @media (max-width: 767px) {
-      padding: 34px 10px 0;
+      padding: 44px 10px 12px;
     }
   }
 
-  & .detail-card-data__title {
-    font-weight: normal;
-    font-size: 10px;
-  }
+  & .detail-card {
+    display: flex;
+    font-family: Arial, sans-serif;
 
-  & .detail-card-data__item, & .detail-card-data__property, & .detail-card-data__value {
-    font-size: 10px;
-  }
+    &__block {
+      &_left {
+        width: 110px;
+        margin: 0 11px 0 0;
 
-  @media (max-width: 767px) {
-    & .detail-card__block_left {
-      width: 96px;
+        @media (max-width: 767px) {
+          width: 96px;
+        }
+      }
+
+      &_top {
+        @media (max-width: 767px) {
+          width: 90px;
+        }
+      }
+
+      &_right {
+        flex: 1;
+      }
     }
 
-    & .detail-card-data__block_top {
-      width: 90px;
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  & .detail-card-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+    &__block {
+      &_top {
+        margin: 0 0 20px;
+      }
+    }
+
+    &__title {
+      display: block;
+      font-size: 10px;
+      line-height: 14px;
+      text-transform: uppercase;
+      font-weight: normal;
+
+      @media (max-width: 991px) {
+        font-size: 12px;
+      }
+    }
+
+    &__item {
+      display: block;
+      font-size: 10px;
+      line-height: 14px;
+      text-transform: uppercase;
+
+      @media (max-width: 991px) {
+        font-size: 12px;
+      }
+    }
+
+    &__row {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__property {
+      display: block;
+      font-size: 10px;
+      line-height: 14px;
+      margin: 0 6px 0 0;
+
+      @media (max-width: 991px) {
+        font-size: 12px;
+      }
+    }
+
+    &__value {
+      display: block;
+      font-size: 10px;
+      line-height: 14px;
+      margin: 0 6px 0 0;
+
+      @media (max-width: 991px) {
+        font-size: 12px;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 .subscriptions {
   margin: 0 0 20px;
-  font-family: MullerRegular, sans-serif;
+  font-family: Arial, sans-serif;
 
   &_news {
     display: flex;
@@ -35,7 +35,8 @@
           background: #fff;
           color: #000;
           border: 1px solid #000;
-          font-family: MullerBold, sans-serif;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
         }
       }
     }
@@ -51,7 +52,8 @@
         @media (max-width: 767px) {
           font-size: 11px;
           line-height: 12px;
-          font-family: MullerMedium, sans-serif;
+          font-family: Arial, sans-serif;
+          font-weight: 500;
         }
       }
     }
@@ -196,7 +198,8 @@
       font-size: 12px;
       line-height: 13px;
       text-transform: uppercase;
-      font-family: MullerBold, sans-serif;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
       margin: 0 0 10px;
 
       @media (max-width: 767px) {
@@ -240,7 +243,8 @@
       font-size: 12px;
       line-height: 14px;
       text-decoration: line-through;
-      font-family: MullerMedium, sans-serif;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
       margin: 0 70px 0 0;
 
       @media (max-width: 1440px) {
@@ -258,7 +262,8 @@
       font-size: 12px;
       line-height: 14px;
       color: #ff0000;
-      font-family: MullerMedium, sans-serif;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
       margin: 0 0 0 0;
 
       @media (max-width: 767px) {
@@ -276,7 +281,8 @@
       border-bottom: 1px solid #a3a3a3;
       text-decoration: none;
       padding: 0 0 1px;
-      font-family: MullerBold, sans-serif;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
 
       @media (hover: hover) {
         &:hover {
@@ -302,11 +308,12 @@
       text-transform: uppercase;
       font-size: 12px;
       line-height: 14px;
-      font-family: MullerMedium, sans-serif;
+      font-family: Arial, sans-serif;
+      font-weight: 500;
 
       @media (max-width: 767px) {
         text-align: center;
-        font-family: MullerRegular, sans-serif;
+        font-family: Arial, sans-serif;
       }
     }
 

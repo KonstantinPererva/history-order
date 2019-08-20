@@ -8,12 +8,24 @@
   }
 
   &__indicator {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 15px;
     height: 15px;
     border: 1px solid #000;
     margin: 0 10px 0 0;
     transition: .15s;
+
+    &:after {
+      content: '\2714';
+      font-size: 13px;
+      line-height: 13px;
+      display: block;
+      flex-shrink: 0;
+      transition: .15s;
+      opacity: 0;
+    }
   }
 
   &__title {
@@ -21,7 +33,7 @@
     height: 10px;
     line-height: 14px;
     font-size: 14px;
-    font-family: MullerRegular, sans-serif;
+    font-family: Arial, sans-serif;
 
     @media (max-width: 767px) {
       line-height: 13px;
@@ -37,7 +49,9 @@
     opacity: 0;
 
     &:checked + .button-confirmation-return__indicator {
-      background: #000;
+      &:after {
+        opacity: 1;
+      }
     }
   }
 }
