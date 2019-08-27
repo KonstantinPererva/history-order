@@ -12,11 +12,15 @@
     <title>Return</title>
 </head>
 <body>
-    <div class="popup-return">
+    <button type="button" data-button="open-popup-return">
+        оформить возврат
+    </button>
+
+    <div class="popup-return" data-popup="return" style="display: none">
         <div class="popup-return__inner">
             <div class="popup-return__form">
                 <form action="!" method="post" class="form-return">
-                    <button type="button" class="form-return-close">×</button>
+                    <button type="button" class="form-return-close" data-close="form-return">×</button>
 
                     <div class="form-return__inner">
                         <div class="form-return__header">
@@ -262,7 +266,7 @@
                         </div>
 
                         <div class="form-return__footer">
-                            <button type="submit" class="button-return-order" disabled>Отправить</button>
+                            <button type="submit" data-submit="form-return" class="button-return-order">Отправить</button>
 
                             <div class="form-privacy-policy">
                                 <span class="form-privacy-policy__text">Нажимая на кнопку, вы подтверждаете свое согласие на обработку персональных данных в соответствии с <a href="/public_purchase_agreement/" class="form-privacy-policy__link">Политикой конфиденциальности</a>.</span>
@@ -272,14 +276,14 @@
                 </form>
             </div>
 
-            <span class="popup-return__substrate"></span>
+            <span class="popup-return__substrate" data-close="form-return"></span>
         </div>
     </div>
 
-    <div class="popup-return" style="display: none">
+    <div class="popup-return" data-popup="return-success" style="display: none">
         <div class="popup-return__inner">
             <div class="success-return">
-                <button type="button" class="form-return-close">×</button>
+                <button type="button" class="form-return-close" data-close="return-success">×</button>
 
                 <div class="success-return-title">
                     <span class="success-return-title__text">Заявка на возврат товара принята.</span>
@@ -298,7 +302,7 @@
                 </div>
             </div>
 
-            <span class="popup-return__substrate"></span>
+            <span class="popup-return__substrate" data-close="return-success"></span>
         </div>
     </div>
 

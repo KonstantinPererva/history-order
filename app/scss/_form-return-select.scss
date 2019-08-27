@@ -24,6 +24,10 @@
       padding-right: 22px;
     }
 
+    &:hover, &:active, &:focus {
+      border-color: #000;
+    }
+
     &:after {
       content: '';
       width: 0;
@@ -43,8 +47,12 @@
       }
     }
 
-    &.open:after {
-      transform: rotate(-180deg);
+    &.open {
+      border-color: #000;
+
+      &:after {
+        transform: rotate(-180deg);
+      }
     }
 
     & .current {
