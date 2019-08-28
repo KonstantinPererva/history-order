@@ -1,99 +1,78 @@
 .history-order-data {
+  position: relative;
   display: flex;
-  min-height: 65px;
-  padding: 0 35px 0 0;
+  align-items: center;
+  width: 75%;
+  height: 47px;
+  user-select: none;
 
-  @media (max-width: 991px) {
-    display: block;
-    padding: 0 15px;
-  }
+  &:hover {
+    cursor: pointer;
 
-  &__wrap {
-    display: flex;
-    align-items: center;
-
-    @media (max-width: 991px) {
-      padding: 6px 0;
-    }
-  }
-
-  &__button {
-    display: flex;
-    align-items: center;
-    margin: 0 15px 0 0;
-
-    @media (max-width: 991px) {
-      display: none;
-    }
-  }
-
-  &__number {
-    display: flex;
-    align-items: center;
-    min-width: 94px;
-    padding: 0 7px;
-    font-size: 11px;
-
-    @media (max-width: 991px) {
-      font-size: 12px;
-      padding: 0 7px 0 0;
-      flex: 1;
-    }
-  }
-
-  &__date {
-    display: flex;
-    align-items: center;
-    min-width: 171px;
-    padding: 0 7px;
-    font-size: 11px;
-
-    @media (max-width: 991px) {
-      font-size: 12px;
-      min-width: auto;
-      padding: 0 0 0 7px;
-    }
-  }
-
-  &__photos {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  &__status {
-    align-items: center;
-    display: none;
-    font-size: 11px;
-
-    @media (max-width: 991px) {
-      font-size: 12px;
-      display: block;
-      color: #989898;
-
-      &_strong {
-        color: #323232;
-        font-weight: bold;
+    & .button-toggle-view-detail-order {
+      & svg path {
+        stroke: #000;
       }
     }
   }
 
-  &__total {
-    min-width: 192px;
-    padding: 0 7px;
-    font-size: 11px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+    height: auto;
+    padding: 0 14px;
+  }
+
+  &__button {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
-    @media (max-width: 991px) {
-      font-size: 12px;
-      flex: 1;
-      padding: 0 0 0 7px;
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 
-  &__amount {
-    margin: 0 6px 0 0;
+  &__item {
+    width: 25%;
+    text-align: center;
+    display: block;
+
+    @media (max-width: 767px) {
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 0 14px;
+    }
+  }
+
+  &__text {
+    color: #000;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    @media (max-width: 767px) {
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    &_title {
+      display: none;
+
+      @media (max-width: 767px) {
+        display: block;
+        margin: 0 8px 0 0 ;
+      }
+    }
   }
 }

@@ -1,15 +1,3 @@
 .history-order {
-  background: #fff;
-  color: #323232;
-  overflow-x: auto;
-
-  &__inner {
-    width: 1017px;
-    padding: 0 0 20px;
-    margin: 0 auto;
-
-    @media (max-width: 991px) {
-      width: 100%;
-    }
-  }
+  width: 100%;
 }

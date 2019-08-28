@@ -1,14 +1,25 @@
 .button-toggle-view-detail-order {
-  padding: 10px 5px 10px 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: .15s;
+  transform: rotate(-90deg);
 
-  @media (hover: hover) {
-    &:hover {
-      cursor: pointer;
+  &.open {
+    transform: rotate(0);
+  }
 
-      & svg path {
-        display: block;
-        stroke: #323232;
-      }
+  &:hover, &:focus, &:active {
+    cursor: pointer;
+    outline: none;
+
+    & svg path {
+      stroke: #000;
     }
   }
 

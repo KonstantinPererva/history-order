@@ -1,54 +1,11 @@
 .history-order-item {
-  display: flex;
-  border-bottom: 1px solid #cecece;
-  min-height: 65px;
+  border-top: 1px solid #e6e6e6;
 
-  @media (max-width: 991px) {
-    display: block;
+  @media (max-width: 767px) {
+    padding: 14px 0;
   }
 
-  &:first-child {
-    border-top: 1px solid #cecece;
-  }
-
-  &.active {
-    @media (max-width: 991px) {
-      background: #f5f5f5;
-
-      & .history-order-item__block_right {
-        display: block;
-        text-align: center;
-      }
-    }
-
-    & .history-order-detail {
-      display: block;
-    }
-  }
-
-  &__block {
-    &_left {
-      flex: 1;
-      border-right: 1px solid #cecece;
-
-      @media (max-width: 991px) {
-        border-right: 0;
-      }
-    }
-
-    &_right {
-      width: 198px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @media (max-width: 991px) {
-        width: 100%;
-        padding: 12px 0;
-        border-top: 1px solid #e5e5e5;
-        display: none;
-      }
-    }
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
   }
 }

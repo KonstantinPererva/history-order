@@ -1,11 +1,26 @@
 .detail-list {
-  &__item {
-    border-top: 1px solid #f5f5f5;
-    padding: 20px 0;
+  width: calc(75% + 70px);
+  padding: 0 0 0 7px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: -15px 0 0 -70px;
 
-    @media (max-width: 991px) {
-      padding: 15px;
-      border-top: 1px solid #e5e5e5;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0;
+    margin: -20px 0 0;
+  }
+
+  @media (max-width: 479px) {
+    display: block;
+  }
+
+  &__item {
+    margin: 15px 0 0 70px;
+
+    @media (max-width: 767px) {
+      margin: 15px 14px;
     }
   }
 }
