@@ -10,11 +10,18 @@
     flex-shrink: 0;
     display: block;
     padding-right: 10px;
+    font-family: MullerBold, sans-serif;
+    text-transform: lowercase;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
   }
 
   &__sum {
     flex-shrink: 0;
     display: block;
     padding-left: 10px;
+    font-family: MullerBold, sans-serif;
   }
 }

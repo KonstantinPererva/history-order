@@ -1,8 +1,33 @@
-* {
+.popuper-add-basket {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: MullerRegular, sans-serif;
 
-  &:after, &:before {
+  & * {
     box-sizing: border-box;
+
+    &:after, &:before {
+      box-sizing: border-box;
+    }
   }
 }
+
+//
+//@font-face {
+//  font-family: MullerRegular;
+//  src: local("MullerRegular"), url('../fonts/MullerRegular.ttf')
+//}
+//
+//@font-face {
+//  font-family: MullerBold;
+//  src: local("MullerBold"), url('../fonts/MullerBold.ttf')
+//}
+//
+//@font-face {
+//  font-family: MullerLight;
+//  src: local("MullerLight"), url('../fonts/MullerLight.ttf')
+//}
+//
+//@font-face {
+//  font-family: MullerMedium;
+//  src: local("MullerMedium"), url('../fonts/MullerMedium.ttf')
+//}
