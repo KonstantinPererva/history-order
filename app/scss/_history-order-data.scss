@@ -42,7 +42,7 @@
   }
 
   &__item {
-    width: 25%;
+    width: 23%;
     text-align: center;
     display: block;
 
@@ -51,19 +51,23 @@
       display: flex;
       align-items: flex-start;
       width: 100%;
-      margin: 0 0 14px;
+      margin: 0 0 9px;
+
+      &:last-child {
+        margin: 0;
+      }
     }
   }
 
   &__text {
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 600;
 
     @media (max-width: 767px) {
       text-transform: uppercase;
-      font-size: 11px;
+      font-size: 12px;
     }
 
     &_title {
@@ -71,7 +75,7 @@
 
       @media (max-width: 767px) {
         display: block;
-        margin: 0 8px 0 0 ;
+        margin: 0 3px 0 0 ;
       }
     }
   }
