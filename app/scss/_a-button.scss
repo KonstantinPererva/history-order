@@ -1,0 +1,30 @@
+.a-button {
+  display: inline-block;
+  vertical-align: middle;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-size: .84615rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 0;
+  padding: 0 28px;
+
+  width: 100%;
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
+}
