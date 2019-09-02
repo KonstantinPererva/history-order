@@ -1,0 +1,20 @@
+.card-product-total {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 0 0 10px;
+
+  &__title {
+    flex-shrink: 0;
+    display: block;
+    padding-right: 10px;
+  }
+
+  &__sum {
+    flex-shrink: 0;
+    display: block;
+    padding-left: 10px;
+  }
+}

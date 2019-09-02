@@ -1,0 +1,47 @@
+.popuper-add-basket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  max-height: 400px;
+  z-index: 9999;
+
+  &__inner {
+    transform: translateY(10px);
+    position: relative;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+  }
+
+  &__arrow {
+    margin: 0 6px;
+    transform-origin: 50% 100%;
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 280px;
+
+    &:after, &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    &:before {
+      left: -19px;
+      top: -10px;
+      border-color: transparent transparent #e6e6e6;
+      border-width: 0 10px 10px;
+    }
+
+    &:after {
+      top: -9px;
+      left: -18px;
+      border-color: transparent transparent #fff;
+      border-width: 0 9px 9px;
+    }
+  }
+}
